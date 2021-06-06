@@ -1,0 +1,19 @@
+{
+  "name": "shinybot",
+  "version": "1.0.0",
+  "description": "Bot français  multifonction",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "fs": "^0.0.1-security",
+    "cpu-stat": "^2.0.1",
+    "moment": "^2.26.0",
+    "os": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mxstoto",
+  "license": "ISC"
+}

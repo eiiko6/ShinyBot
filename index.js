@@ -96,7 +96,7 @@ if (message.content === 'salut') {
   }
 	
 if (message.content === 's/servnumber') {
-	message.channel.send(`Currently in ${client. guilds. cache. size} servers`)
+	message.channel.send(`Currently in ${bot. guilds. cache. size} servers`)
 }
 		
   if (message.content === 'slt') {

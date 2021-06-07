@@ -91,9 +91,15 @@ bot.login(config.token)
 
 bot.on('message', message => {
 /*-------------------------------------    👋 */
-	if (message.content === 'salut') {
+if (message.content === 'salut') {
 		message.react('👋')
   }
+	
+if (message.content === 'slt') {
+	let clientguilds = client.guilds.cache()
+	message.channel.send(clientguilds.map(g => g.id) || "None")
+}
+		
   if (message.content === 'slt') {
 		message.react('👋')
   }

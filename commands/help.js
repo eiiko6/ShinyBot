@@ -5,19 +5,17 @@ module.exports.run = async (bot, message, args) => {
 
  
     var helpEmbed = new Discord.MessageEmbed()
-    .setTitle("__Informations sur ShinyBot__")
+    .setTitle("__ShinyBot's informations__")
     .setColor("#57cdff")
-    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', 'ShinyBot est un bot multi-fonctions (modération, utilitaire, fun, etc...).')
-    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', 'Il possède un filtre de mots vulgaires assez complet.')
-    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', 'Il a aussi une grande liste de réactions (Bonjour, salut, oui, à+, etc...).')
-    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', 'Codé par Mxstoto#1405.')
+    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', 'ShinyBot is a multi-function bot (moderating, utility, fun, etc...).')
+        .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', 'He has more than 15 amazing commands !')
+    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', 'Developed by Mxstoto#1405.')
     .addFields(
-        { name: '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', value: 'Préfix : `s/`' },
-        { name: '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', value: 'Langage : `Java Script`' },
-        { name: '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', value: 'Ping moyen : `192 ms`'  },
+        { name: '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', value: 'Prefix : `s/`' },
+        { name: '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', value: 'Language : `Java Script`' },
     )
-    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', '`s/commands` pour la liste des commandes disponibles.')
-    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', "`s/moneyinfo` pour des informations sur le système d'économie.")
+    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', '`s/commands` for the command list.')
+    .addField('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -', "`s/moneyinfo` for some informations about the xp system.")
     message.channel.send(helpEmbed)
 
     var today = new Date();

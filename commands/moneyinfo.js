@@ -6,12 +6,12 @@ module.exports.run = async (bot, message, args) => {
 
     var moneyinfoEmbed = new Discord.MessageEmbed()
         .setColor("#57cdff")
-        .setTitle("__Informations sur le système d'xp de ShinyBot__")
-        .setDescription("ShinyBot possède un système d'xp extrèmement simple.")
+        .setTitle("__Informations about ShinyBot's xp functionnality.__")
+        .setDescription("ShinyBot has a pretty simple xp functionnality.")
         .addFields(
-            { name: "Départ", value: "Vous commençez avec **0** xp."},
-            { name: "Gains", value: "Vous gagnez entre **5** et **15** xp par message."},
-            { name: "Profil", value: "Votre xp est relatif à ShinyBot, donc inter-serveurs."},
+            { name: "Start", value: "You begin with **0** xp."},
+            { name: "Earning", value: "You earn between **5** and **15** xp per message."},
+            { name: "Profile", value: "Your xp is relative to ShinyBot, so inter-servers."},
         )
     message.channel.send(moneyinfoEmbed)
 

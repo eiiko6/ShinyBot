@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
     let isBotOwner = message.author.id == '664587684282630174'
 
-    if (!isBotOwner) return message.channel.send("🔐 Seul le propriétaire du bot peut utiliser cette commande.")
+    if (!isBotOwner) return message.channel.send("🔐 Only the bot owner can use this command ;(.")
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);

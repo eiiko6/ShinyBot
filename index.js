@@ -35,7 +35,7 @@ bot.on("ready", () => {
 bot.on("message", async message => {
 
   if(message.author.bot) return;
-  if(message.channel.type === 'dm') return message.channel.send("Mes commandes ne fonctionnent pas en message privé !\n**Essayez les plutôt dans un serveur.**")
+  if(message.channel.type === 'dm') return message.channel.send("My commands doesn't work in PM...\n**Try somewhere else !**")
 
   let content = message.content.split(" ");
   let command = content[0];

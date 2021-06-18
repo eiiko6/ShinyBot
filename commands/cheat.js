@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 
   let isBotOwner = message.author.id == '664587684282630174'
 
-  if (!isBotOwner) return message.channel.send("🔐 Seul le propriétaire du bot peut utiliser cette commande.")
+  if (!isBotOwner) return message.channel.send("🔐 Only the owner can use this command.")
 
   message.channel.send("résultat :" + guild . getJDA () . getGuilds () . size ())
 
@@ -15,5 +15,3 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
   name: "uezdiuzeudy23"
 }
-
-//member.roles.remove(role);

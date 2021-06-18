@@ -69,7 +69,7 @@ bot.on("message", async message => {
 /*Statut -----------------------------------------------------------------------------------------*/
  
 var jeuxs = [
-  `| v 1.6 |`,
+  `| v 2.6 |`,
   `| Dev : Mxstoto#1405 |`,
   `| s/help |`,]
  
@@ -82,7 +82,7 @@ setInterval(function () {
  var today = new Date();
  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
  console.log(time + ' - Bot ▸ changed activity to ' + jeux)
-}, 10000)
+}, 5000)
  
  
 bot.login(config.token)

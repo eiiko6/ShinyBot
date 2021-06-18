@@ -5,10 +5,10 @@ module.exports.run = async (bot, message, args) => {
     let inline = true
     let resence = true
     const status = {
-        online: "En ligne",
-        idle: "Inactif",
-        dnd: " Ne pas dérenger",
-        offline: " Hors-Ligne/Invisble"
+        online: "Online",
+        idle: "Inactive",
+        dnd: " Do not disturb",
+        offline: " Offline/Invisible"
     }
     let mentionedUser = message.mentions.users.first() || message.author;
 
@@ -26,12 +26,12 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor(member.user.username)
         .setThumbnail((target.displayAvatarURL))
         .setColor("#fd84f3")
-        .addField("🤙 Pseudo", `${member.user.tag}`, inline)
+        .addField("🤙 Nickname", `${member.user.tag}`, inline)
         .addField(":id: ID", member.user.id, inline)
-        .addField("👾 Bot ", `${bot}`, inline, true)
-        .addField("Statut", `${status[member.user.presence.status]}`, inline, true)
-        .addField("🎮 Joue à", `${member.user.presence.game ? `${member.user.presence.game.name}` : "Ne joue pas"}`, inline, true)
-        .addField("📅 Inscription sur Discord", moment(member.user.createdAt).format("LL"), true)
+        .addField("👾 Bot ? ", `${bot}`, inline, true)
+        .addField("Status", `${status[member.user.presence.status]}`, inline, true)
+        .addField("🎮 Playing at ", `${member.user.presence.game ? `${member.user.presence.game.name}` : "Not playing"}`, inline, true)
+        .addField("📅 Arrival on Discord ", moment(member.user.createdAt).format("LL"), true)
         .setFooter(`Informations sur ${member.user.username}`)
         .setThumbnail(mentionedUser.displayAvatarURL)
 

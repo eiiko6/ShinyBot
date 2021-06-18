@@ -10,29 +10,27 @@ module.exports.run = async (bot, message, args) => {
 
     const user = bot.users.cache.get(member.user.id)
     var helpEmbed = new Discord.MessageEmbed()
-    .setAuthor("Liste des commandes", bot.user.avatarURL)
+    .setAuthor("Commands list", bot.user.avatarURL)
     .setTitle("-  -  -  -  -  -  -  -  -  -  -")
     .setColor("#95ff00")
     .addFields(
-        { name: 'help', value: 'Informations sur le bot.' },
-        { name: 'commands', value: 'Liste des commandes.' },
-        { name: 'moneyinfo', value: "Informations sur le système d'économie" },
-        { name: 'kick', value: 'Exclu le membre mentionné.'  },
-        { name: 'ban', value: 'Banni le membre mentionné.' },
-        { name: 'dance', value: 'Petite animation de danse.' },
-        { name: 'kawaï', value: 'Un GIF kawaï parmi 25 présélectionnés.' },
-        { name: 'clear', value: 'Supprimer des messages.' },
-        { name: 'say', value: 'Faire parler le bot.' },
-        { name: 'userinfo', value: 'Informations sur un utilisateur.' },
-        { name: 'serverinfo', value: 'Informations sur le serveur.' },
-        { name: 'survey', value: 'Lance un sondage.' },
-        { name: 'moneyinfo', value: "Informations sur le système d'économie." },
-        { name: 'money', value: "Donne la valeur de l'argent de l'utilisateur." },
-        { name: 'time', value: "Donne l'heure et la date." },
+        { name: 'help', value: 'Bot informations.' },
+        { name: 'commands', value: 'Commands list.' },
+        { name: 'moneyinfo', value: "Xp functionality informations." },
+        { name: 'kick', value: 'Kicks the mentionned user.'  },
+        { name: 'ban', value: 'Bans the mentionned user.' },
+        { name: 'dance', value: 'A simple dance animation.' },
+        { name: 'kawaï', value: 'Picks a kawaï gif between 25.' },
+        { name: 'clear', value: 'Delete some messages.' },
+        { name: 'say', value: 'Do the bot speak for you !' },
+        { name: 'userinfo', value: 'Informations of an user.' },
+        { name: 'serverinfo', value: 'nformations of the server.' },
+        { name: 'survey', value: 'Starts a survey.' },
+        { name: 'money', value: "Gives the value of xp that you have." },
     )
       .setFooter("Préfix : s/")
 
-    message.channel.send("<@" + member.user.id + "> Je t'ai envoyé le liste des commandes en message privé.")
+    message.channel.send("<@" + member.user.id + "> I sent you the commands list in PM.")
     user.send(helpEmbed)
 
     var today = new Date();

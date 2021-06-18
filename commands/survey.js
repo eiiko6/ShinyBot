@@ -6,14 +6,14 @@ module.exports.run = async (bot, message, args) => {
     let target = message.mentions.users.first() || message.author
 
         var text = message.content.split(' ').slice(1).join(' ')
-        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send(":x: Vous n'avez pas la permission d'utiliser cette commande")
-        if(!text) return message.channel.send(':x: Veuillez indiquer du texte')
+        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send(":x: You don't have the permission to execute this command.")
+        if(!text) return message.channel.send(':x: Please, type something...')
 
          let surveyEmbed = new Discord.MessageEmbed()
          .setColor("#ff7b2c")
-        .setTitle("__-                 Sondage                 -__")
+        .setTitle("__-                 Survey                 -__")
         .setDescription(text)
-        .addField('✅ Pour | ❌ Contre | 🏳 Neutre', '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -')
+        .addField('✅ Yes | ❌ No | 🏳 IDK', '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -')
         .setFooter(`Proposé par ${member.user.username}`)
 
         message.channel.send(surveyEmbed)

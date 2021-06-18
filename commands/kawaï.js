@@ -33,7 +33,7 @@ module.exports.run = (bot, message, args) => {
  
     let kawaïEmbed = new Discord.MessageEmbed()
     .setColor("#fdfd9e")
-    .setTitle("Un petit GIF kawaï :")
+    .setTitle("A beautiful kawaï GIF for you :")
     .setImage(lien)
     .setFooter("Source : https://giphy.com/gifs");
  

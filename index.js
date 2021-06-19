@@ -68,7 +68,7 @@ bot.on("message", async message => {
 
 /*Statut -----------------------------------------------------------------------------------------*/
  
-var servers = ${bot. guilds. cache. size}
+var servers = bot.guilds.cache.size
 
 var jeuxs = [
   `| In ` + servers + `servers |`,

@@ -71,9 +71,8 @@ bot.on("message", async message => {
 var servers = bot.guilds.cache.size
 
 var jeuxs = [
-  `| In ` + servers + `servers |`,
   `| Dev : Mxstoto#1405 |`,
-  `| s/help |`,]
+  `| Start with s/help |`,]
  
 setInterval(function () {
  

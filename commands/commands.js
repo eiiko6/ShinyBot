@@ -27,7 +27,6 @@ module.exports.run = async (bot, message, args) => {
         { name: 'serverinfo', value: 'nformations of the server.' },
         { name: 'survey', value: 'Starts a survey.' },
         { name: 'money', value: "Gives the value of xp that you have." },
-        { name: 'guide', value: "Gives the link to the guide of the bot." }
     )
       .setFooter("Prefix : s/")
 

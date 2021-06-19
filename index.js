@@ -69,7 +69,7 @@ bot.on("message", async message => {
 /*Statut -----------------------------------------------------------------------------------------*/
  
 var jeuxs = [
-  `| v 2.6 |`,
+  `| ${bot. guilds. cache. size} servers |`,
   `| Dev : Mxstoto#1405 |`,
   `| s/help |`,]
  
@@ -94,11 +94,6 @@ bot.on('message', message => {
 if (message.content === 'salut') {
 		message.react('👋')
   }
-	
-if (message.content === 's/servnumber') {
-	message.channel.send(`Currently in ${bot. guilds. cache. size} servers`)
-}
-		
   if (message.content === 'slt') {
 		message.react('👋')
   }

@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("__-                 Survey                 -__")
         .setDescription(text)
         .addField('✅ Yes | ❌ No | 🏳 IDK', '-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -')
-        .setFooter(`Proposé par ${member.user.username}`)
+        .setFooter(`Sended by ${member.user.username}`)
 
         message.channel.send(surveyEmbed)
             .then(function (message) {

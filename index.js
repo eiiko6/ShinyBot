@@ -72,7 +72,8 @@ var servers = bot.guilds.cache.size
 
 var jeuxs = [
   `| Dev : Mxstoto#1405 |`,
-  `| Start with s/help |`,]
+  `| Start with s/help |`,
+  `| Currently on v1.8 |`]
  
 setInterval(function () {
  
@@ -91,157 +92,25 @@ bot.login(config.token)
 /*Auto-réactions ---------------------------------------------------------------------------------*/
 
 bot.on('message', message => {
-/*-------------------------------------    👋 */
-if (message.content === 'salut') {
+  if (message.content === 'hello') {
 		message.react('👋')
   }
-  if (message.content === 'slt') {
+  if (message.content === 'bye') {
 		message.react('👋')
   }
-  if (message.content === 'bonjour') {
-		message.react('👋')
-  }
-  if (message.content === 'coucou') {
-		message.react('👋')
-  }
-  if (message.content === 'au revoir') {
-		message.react('👋')
-  }
-  if (message.content === 'a+') {
-		message.react('👋')
-  }
-  if (message.content === 'à+') {
-		message.react('👋')
-  }
-/*-------------------------------------       👍 */
   if (message.content === 'cool') {
 		message.react('👍')
   }
   if (message.content === 'super') {
 		message.react('👍')
   }
-/*-------------------------------------       👎 */
-  if (message.content === 'nul') {
-		message.react('👎')
-  }
-/*-------------------------------------   ✅ ❌ */
-  if (message.content === 'oui') {
+  if (message.content === 'yes') {
 		message.react('✅')
   }
-  if (message.content === 'non') {
+  if (message.content === 'no') {
 		message.react('❌')
   }
   if (message.content === 'ok') {
 		message.react('✅')
-  }
-})
-
-/*Filtre de mots ---------------------------------------------------------------------------------*/
-
-bot.on('message', message => {
-  if (message.content === 'putain') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'merde') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'bite') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'tg') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'ta geule') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'fils de pute') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'fdp') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'cul') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'pute') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'connard') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'ntm') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === 'ta mère') {
-    const member = message.mentions.members.first() || message.member;
-      let target = message.mentions.users.first() || message.author
-    message.channel.send("<@" + member.user.id + "> Attention à ton langage")
-    message.delete()
   }
 })

@@ -2,7 +2,26 @@ const Discord = require("discord.js");
 const liens = [
     ":dog2:",
     ":poodle:",
-    ":cat2:"
+    ":cat2:",
+    ":rat:",
+    ":turtle:",
+    ":rabbit2:",
+    ":rooster:",
+    ":baby_chick:",
+    ":sheep:",
+    ":ox:",
+    ":boar:",
+    ":pig2:",
+    ":snake:",
+    ":elephant:",
+    ":monkey:",
+    ":leopard:",
+    ":whale:",
+    ":fish:",
+    ":octopus:",
+    ":bug:",
+    ":bee:",
+    ":ant:"
 ]
  
 module.exports.run = (bot, message, args) => {
@@ -12,7 +31,7 @@ module.exports.run = (bot, message, args) => {
     let petEmbed = new Discord.MessageEmbed()
     .setColor("#85521e")
     .setTitle("A pet for you :")
-    .setImage(lien)
+    .setDescription(lien)
     .setFooter("Chosen randomly.");
  
     message.channel.send(petEmbed);

@@ -73,7 +73,7 @@ var servers = bot.guilds.cache.size
 var jeuxs = [
   `| Dev : Mxstoto#1405 |`,
   `| Start with s/help |`,
-  `| Currently on v1.8 |`]
+  `| Currently on v1.8 |`,]
  
 setInterval(function () {
  

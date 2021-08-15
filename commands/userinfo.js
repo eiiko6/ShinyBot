@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Status", `${status[member.user.presence.status]}`, inline, true)
         .addField("🎮 Playing at ", `${member.user.presence.game ? `${member.user.presence.game.name}` : "Not playing"}`, inline, true)
         .addField("📅 Arrival on Discord ", moment(member.user.createdAt).format("LL"), true)
-        .setFooter(`Informations sur ${member.user.username}`)
+        .setFooter(`Informations about ${member.user.username}`)
         .setThumbnail(mentionedUser.displayAvatarURL)
 
     message.channel.send(userEmbed);

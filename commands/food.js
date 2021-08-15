@@ -56,7 +56,7 @@ module.exports.run = (bot, message, args) => {
     const lien = liens[Math.floor(Math.random() * liens.length)];
  
     let foodEmbed = new Discord.MessageEmbed()
-    .setColor("#85521e")
+    .setColor("#cce034")
     .setTitle("Some food for you :")
     .setDescription(lien)
     .setFooter("Chosen randomly.");

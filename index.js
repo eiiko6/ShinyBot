@@ -14,7 +14,7 @@ fs.readdir("./commands/", (err, files) => {
  
   let jsfile = files.filter(f => f.split(".").pop() === "js");
   if(jsfile.length <= 0){
-    console.log(time + " - Files ▸ Aucune commande trouvée");
+    console.log(time + " - Files ▸ Commands not found");
     return;
   }
  
@@ -29,7 +29,7 @@ jsfile.forEach((f, i) =>{
 bot.on("ready", () => {
   var today = new Date();
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  console.log(time + " - Bot ▸ " + bot.user.username + " en ligne")
+  console.log(time + " - Bot ▸ " + bot.user.username + " online")
 });
  
 bot.on("message", async message => {

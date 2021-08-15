@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
         .addField(":id: ID", member.user.id, inline)
         .addField("👾 Bot ? ", `${bot}`, inline, true)
         .addField("Status", `${status[member.user.presence.status]}`, inline, true)
-        .addField("🎮 Playing at ", `${member.user.presence.game ? `${member.user.presence.game.name}` : "Not playing"}`, inline, true)
+        .addField("🎮 Playing ", `${member.user.presence.game ? `${member.user.presence.game.name}` : "Not playing"}`, inline, true)
         .addField("📅 Arrival on Discord ", moment(member.user.createdAt).format("LL"), true)
         .setFooter(`Informations about ${member.user.username}`)
         .setThumbnail(mentionedUser.displayAvatarURL)
